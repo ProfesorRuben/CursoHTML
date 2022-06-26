@@ -1,0 +1,3 @@
+/*1653290820000*/
+function scrollToTop(){var element=$("body");var offset=element.offset();var offsetTop=offset.top;$("html, body").animate({scrollTop:offsetTop},200,"linear")}
+$(function(){var UM=window.UM||{};var $scrollTop=$("#scrolltop");$(document).on("scroll",function(){if($(window).scrollTop()>100)$scrollTop.addClass("show");else $scrollTop.removeClass("show")});if($scrollTop)$scrollTop.on("click",null,null,scrollToTop);if(UM){if(UM.ImgNormalizer)UM.ImgNormalizer.init();if(UM.Navigation)UM.Navigation.initNavigation();if(typeof UM.LayoutUtils!=="undefined")UM.LayoutUtils.setFullHeight($(".layout-height, .um-bloque-flotante"))}if(typeof $.fn.agendaSiu==="function")$(".agenda-siu").agendaSiu()});

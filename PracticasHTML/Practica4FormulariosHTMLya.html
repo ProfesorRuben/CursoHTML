@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <style>
+    p{
+      color:blue;
+
+    }
+
+  </style>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EjemploFormularios</title>
+</head>
+
+<body style="background-color:powderblue";>
+    <form action="file:///C:/Users/Ruben%20Gonzalez/Desktop/Git/Repositorio%20Git/Curso-HTML-y-CSS/Curso-HTML-y-CSS/Hola.html" method="post">
+      <!-- Si definimos la propiedad readonly a un control el mismo es de solo 
+        lectura y no podemos modificar su contenido. Esta propiedad tiene uso
+         cuando mediante un lenguaje de script (generalmente javascript) 
+         modificamos el control cambiandolo de estado ante ciertos eventos. -->
+      <p>
+        Formulario básico:
+        <input type="text" name="textonomodificable" value="formulario a rellenar" readonly>
+
+      </p>
+
+
+      <label for="nombre">Escriba su nombre:</label>
+      <input type="text" name="nombre" size="30" id="nombre"value="Pepe" size="20"><br>
+      
+        <!-- Size significa que el cuadro de texto se dimensiona 
+        para permitir mostrar 20 caracteres (no se limita la 
+        cantidad de caracteres a ingresar) -->
+
+        <!-- Label representa varias mejoras:
+        
+        - Hemos definido la propiedad id a la marca input.
+        - El elemento label tiene su marca de comienzo y fin, entre medio se dispone el texto a mostrar.
+        - Para vincular esta label con el elemento input debemos inicializar la propiedad for con el nombre 
+        asignado a la propiedad id del elemento input. Más adelante veremos que la propiedad id la pueden 
+        tener todos los elementos HTML y es de vital importancia para CSS (Hojas de Estilo) y Javascript-->
+        <br>
+        
+        <label for="clave">Escriba su clave:</label>
+  <input type="password" name="clave" maxlength="12" id="clave">
+   <!-- maxlength significa limita la cantidad de caracteres a ingresar -->
+  <br>
+
+  <label for="mail">Escriba su mail:</label>
+  <input type="text" name="mail" size="50" id="mail"><br>
+
+  Comentarios:<br>
+  <textarea name="comentarios" rows="5" cols="60"></textarea> 
+  <br>
+
+  Seleccione los lenguajes que conoce:
+  <br>
+  <input type="checkbox" name="java">Java<br>
+  <input type="checkbox" name="cmasmas">C++<br>
+  <input type="checkbox" name="c">C<br>
+  <input type="checkbox" name="csharp">C#<br>
+
+  Seleccione el máximo nivel de estudios que tiene:
+  <br>
+  <input type="radio" name="estudios" value="1">Sin 
+  estudios<br>
+  <input type="radio" name="estudios" value="2">Primario<br>
+  <input type="radio" name="estudios" checked value="3">Secundario<br>
+  <input type="radio" name="estudios" value="4">Universitario<br>
+
+
+  <p>Seleccione su pais:
+  <select name="pais">
+    <option value="1">Argentina</option>
+    <option value="2">España</option>
+    <option value="3">México</option>
+    <option value="4">Guatemala</option>
+    </select></p>
+
+    <p> Seleccione uno o varios colores (Presione Ctrl para seleccionar varios colores)<br>
+    <select name="colores[]" size="4" multiple>
+      <option value="1">Rojo</option>
+      <option value="2">Verde</option>
+      <option value="3" selected>Azul</option>
+      <option value="4">Amarillo</option>
+      <option value="5">Blanco</option>
+      <option value="6">Negro</option>
+      <option value="7">Naranja</option>
+      <option value="8">Violeta</option>
+    </select></p>
+
+
+
+    <p> Seleccione una fruta o verdura:
+    <select name="articulo">
+      <optgroup label="Frutas">
+        <option value="1">Naranjas</option>
+        <option value="2">Manzanas</option>
+        <option value="3">Sandía</option>
+        <option value="4">Ciruela</option>
+      </optgroup>
+      <optgroup label="Verduras">
+        <option value="5">Lechuga</option>
+        <option value="6">Acelga</option>
+        <option value="7">Batatas</option>
+        <option value="8">Zanahorias</option>
+        <option value="9">Calabaza</option>
+      </optgroup>
+    </select></p>
+    <p>Seleccione la sección donde desea entrar:
+      <br>
+      <input type="radio" name="seccion" value="1">Estándar<br>
+      <input type="radio" name="seccion" value="2">No registrado<br>
+      <input type="radio" name="seccion" value="3" disabled>Premium<br></p>
+
+
+      <pre>
+        select * from editoriales
+           left join libros
+           on editoriales.codigo=libros.codigoeditorial;
+       </pre>
+
+
+       <p>
+        select * from editoriales
+           left join libros
+           on editoriales.codigo=libros.codigoeditorial;
+       </p>
+
+
+      <p style="color:#888888;text-indent:20px">
+        <span style="background-color:#eeee00">Aquí comentarios.</span> 
+        Aquí comentarios. 
+        <div style="background-color:#eeee00">Aquí comentarios.</div> 
+        </p>
+        
+
+    <button type="submit">Enviar<img src="../img/enviar.png" width="28" alt="envio"></button>
+    <button type="reset">Borrar<img src="borrar.gif" alt="borrado"></button>
+    </form>
+
+
+
+
+<h2 style="font-family:Arial">Título principal</h2>
+<p style="font-family:Times New Roman;font-size:14px;font-weight:bolder">
+Párrafo en negrita. 
+Párrafo en negrita. 
+</p>
+<div style="font-family:Verdana;font-size:12px">
+<p>
+Primer párrafo. 
+Primer párrafo. 
+</p>
+<p>
+Segundo párrafo.
+Segundo párrafo.
+</p>
+</div>
+
+</body>
+
+</html>

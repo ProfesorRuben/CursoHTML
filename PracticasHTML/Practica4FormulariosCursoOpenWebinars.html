@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practica 4 Formularios</title>
+</head>
+
+<body>
+    <form>
+    <fieldset>
+        <center><strong>HOJA DE INSCRIPCIÓN</br> EN LOS CICLOS FORMATIVOS DE GRADO SUPERIOR</strong></center></br>
+        <fieldset style="float: left; width: 280px; background-color:rgb(172, 169, 169);">
+            <legend>Datos personales</legend>
+            <table>
+                <tr>
+                    <td>Nombre: <input type="text" name="Nombre"></td>
+                    <td>Apellidos: <input type="text" name="Apellidos"></td>
+                    <td>DNI: <input type="text" name="DNI"></td>
+                </tr>
+                <tr>
+                    <td>Localidad Nacimiento: <input type="text" name="Localidad"></td>
+                    <td>Provincia: <br><select name="Provincia:">
+                        <option>Sevilla</option>
+                        <option>Cádiz</option>
+                        <option>Huelva</option>
+                        <option>Málaga</option>
+                        <option>Córdoba</option>
+                        <option>Jaén</option>
+                        <option>Almería</option>
+                        <option>Granada</option>
+                    </select>
+                </td>
+                </tr>
+                <tr>
+                    <td colspan="2">Dirección: </br><input type="text" name="Direccion"></td>
+                    <td>Código postal: <input type="text" name="Postal"></td>
+                </tr>
+            </table>
+        </fieldset>
+        
+    </fieldset>
+    <fieldset style="float: left; width: 280px; background-color:yellow;">
+        <input type="radio" name=Acceso value="Directo"> Directo
+        </br>
+        </br>
+        <input type="radio" name=Acceso value="Prueba libre"> Prueba libre
+    </fieldset>
+</form>
+</body>
+
+</html>
